@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CSC390Exam_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="ol1-eG-vbZ">
+                            <items>
+                                <picker width="1" height="100" alignment="left" id="d3N-sA-WZu"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Calculate" id="ByK-F8-Jup">
+                            <connections>
+                                <action selector="theButton" destination="AgC-eL-Hgc" id="jFv-hl-YgI"/>
+                                <segue destination="RTl-0T-ByP" kind="push" id="Dog-Fb-4t3"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="thePicker" destination="d3N-sA-WZu" id="zaX-sv-1rf"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Interface Controller2-->
+        <scene sceneID="CV2-UK-rj0">
+            <objects>
+                <controller hidesWhenLoading="NO" id="RTl-0T-ByP" customClass="InterfaceController2" customModule="CSC390Exam_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" id="bsd-9X-aeu"/>
+                        <table alignment="left" id="ViO-a0-Pmm">
+                            <items>
+                                <tableRow id="CH7-l4-oz2">
+                                    <group key="rootItem" width="1" alignment="left" id="YC1-yL-bbH"/>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="mbps" destination="bsd-9X-aeu" id="tRl-V1-CwF"/>
+                        <outlet property="theTable" destination="YC1-yL-bbH" id="iLr-JE-u5c"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="419" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +70,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="CSC390Exam_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

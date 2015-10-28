@@ -20,6 +20,7 @@
 		29A29C441BE1540E00977FAD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A29C431BE1540E00977FAD /* ExtensionDelegate.swift */; };
 		29A29C461BE1540E00977FAD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A29C451BE1540E00977FAD /* NotificationController.swift */; };
 		29A29C481BE1540F00977FAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A29C471BE1540F00977FAD /* Assets.xcassets */; };
+		29A29C581BE1544100977FAD /* InterfaceController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A29C571BE1544100977FAD /* InterfaceController2.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		29A29C451BE1540E00977FAD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		29A29C471BE1540F00977FAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29A29C491BE1540F00977FAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29A29C571BE1544100977FAD /* InterfaceController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InterfaceController2.swift; path = "../CSC390Exam WatchKit App/InterfaceController2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				29A29C411BE1540E00977FAD /* InterfaceController.swift */,
+				29A29C571BE1544100977FAD /* InterfaceController2.swift */,
 				29A29C431BE1540E00977FAD /* ExtensionDelegate.swift */,
 				29A29C451BE1540E00977FAD /* NotificationController.swift */,
 				29A29C471BE1540F00977FAD /* Assets.xcassets */,
@@ -307,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A29C581BE1544100977FAD /* InterfaceController2.swift in Sources */,
 				29A29C461BE1540E00977FAD /* NotificationController.swift in Sources */,
 				29A29C441BE1540E00977FAD /* ExtensionDelegate.swift in Sources */,
 				29A29C421BE1540E00977FAD /* InterfaceController.swift in Sources */,
